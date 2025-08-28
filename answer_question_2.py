@@ -13,10 +13,11 @@ else:
     r = len(i) - (i.index(max(i)) + 1)
     for _ in range(r):
         i.pop()
-    if (max(i) - min(i)) < (max(j) - min(j)) and i.index(min(i)) < i.index(max(i)):
+    if (max(i) - min(i)) > (max(j) - min(j)) and i.index(min(i)) > i.index(max(i)):
         c = max(j) - min(j)
         print(f"c1 = {c}")            
     else:
-        
         a = max(i) - min(i)
         print(f"a2 = {a}")
+
+print(f"{j}")
